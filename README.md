@@ -1,4 +1,4 @@
-# billing-map
+# cinema system
 
 > A Vue.js project
 
