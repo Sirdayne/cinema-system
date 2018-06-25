@@ -1,0 +1,88 @@
+#cinema
+  float left
+  width 100%
+#cinema-system
+  float left
+  margin-top 40px
+  width calc(100% - 300px)
+  .row
+    float left
+    width 100%
+    margin-top 20px
+    display flex
+    justify-content space-around
+  .seat
+    width 30px
+    height 30px
+    border 1px solid #323232
+    box-sizing border-box
+    cursor pointer
+    transition .3s linear
+    background #13cf25
+    &.picked
+      background #ffd000
+    &.busy
+      background #f00
+      cursor not-allowed
+#cinema-total
+  float left
+  margin-top 70px
+  position relative
+  width 280px
+  border-left 1px solid #323232
+  border-bottom 1px solid #323232
+  padding-left 20px
+  margin-left 20px
+  box-sizing border-box
+  min-height 400px
+  .buttons
+    position absolute
+    bottom -100px
+    left 0
+    width 100%
+  button
+    float left
+    padding 5px 20px
+    margin 20px
+    width auto
+    background #2f8fde
+    border #fff
+    color #fff
+    transition .3s linear
+    cursor pointer
+    box-sizing border-box
+    &:hover
+      background #fff
+      border #2f8fde
+      color #2f8fde
+
+#window
+  float left
+  width 100%
+  .container
+    float left
+    width 100%
+  .stroke
+    float left
+    width 100%
+    margin 5px 0
+
+.total
+  float left
+  width 100%
+  font-weight bold
+
+.modal
+  position fixed
+  display none
+  border 1px solid #323232
+  padding 25px
+  top 150px
+  left calc(50% - 140px)
+  box-sizing border-box
+  width 280px
+  height 70px
+  z-index 10
+  background #fff
+  border-radius 15px
+  font-weight bold
